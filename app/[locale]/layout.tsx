@@ -133,7 +133,7 @@ export default async function LocaleLayout({
           </div>
           <div className="mx-auto w-full max-w-5xl px-4 pb-8 sm:px-6">
             <p className="text-xs text-muted">
-              © 2026 Dongmin Yu · {t.footer.fontCredit}
+              © 2026 donminzzi lab · {t.footer.fontCredit}
             </p>
           </div>
         </footer>

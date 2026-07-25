@@ -33,7 +33,7 @@ export default async function LandingPage({
     applicationCategory: "Productivity",
     inLanguage: locale,
     url: `${SITE_URL}/${locale}`,
-    author: { "@type": "Person", name: "Dongmin Yu" },
+    author: { "@type": "Organization", name: "donminzzi lab" },
   };
 
   return (

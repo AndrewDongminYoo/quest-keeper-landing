@@ -1,11 +1,9 @@
 # Terms of Service — Quest Keeper
 
-> ⚠️ **Draft**: This document is a draft based on the app's actual behavior and is not legal advice.
-> Before publication, finalize the `[publisher legal name]`, contact email, effective date, and governing law, and seek professional review if needed.
 > This is an English translation provided for convenience. In case of any discrepancy, the Korean version prevails.
 
 **Effective date:** 2026-07-25
-**Publisher:** [publisher legal name] (the "Developer")
+**Publisher:** donminzzi lab (the "Developer")
 **Contact:** ydm2790@gmail.com
 
 ## 1. Application of These Terms

@@ -1,11 +1,9 @@
 # Privacy Policy — Quest Keeper
 
-> ⚠️ **Draft**: This document is a draft based on app behavior verified in code and is not legal advice.
-> Before publication, finalize the `[publisher legal name]`, contact email, and effective date, and seek professional review if needed.
 > This is an English translation provided for convenience. In case of any discrepancy, the Korean version prevails.
 
 **Effective date:** 2026-07-25
-**Publisher:** [publisher legal name] (the "Developer")
+**Publisher:** donminzzi lab (the "Developer")
 **Contact:** ydm2790@gmail.com
 
 ## 1. Summary
