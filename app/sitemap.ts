@@ -6,11 +6,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return paths.flatMap((path) =>
     LOCALES.map((locale) => ({
       url: `${SITE_URL}/${locale}${path}`,
-      lastModified: new Date(),
       alternates: {
         languages: {
           ko: `${SITE_URL}/ko${path}`,
           en: `${SITE_URL}/en${path}`,
+          "x-default": `${SITE_URL}/ko${path}`,
         },
       },
     })),

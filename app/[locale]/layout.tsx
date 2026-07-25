@@ -61,9 +61,22 @@ export default async function LocaleLayout({
   const t = dict[locale];
   const otherLocale: Locale = locale === "ko" ? "en" : "ko";
 
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Quest Keeper",
+    url: SITE_URL,
+    inLanguage: locale,
+    publisher: { "@type": "Organization", name: "donminzzi lab" },
+  };
+
   return (
     <html lang={locale} className={`${galmuri.variable} ${galmuri14.variable}`}>
       <body className="font-sans antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
         <header className="mx-auto flex h-16 w-full max-w-5xl items-center justify-between px-4 sm:px-6">
           <Link
             href={`/${locale}`}
