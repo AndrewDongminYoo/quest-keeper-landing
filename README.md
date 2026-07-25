@@ -34,4 +34,4 @@ pnpm build      # production build (verification gate)
 pnpm lint
 ```
 
-Set `NEXT_PUBLIC_SITE_URL` when the production domain changes (defaults to `https://quest-keeper-landing.vercel.app`).
+Set `NEXT_PUBLIC_SITE_URL` when the production domain changes (defaults to `https://quest.donminzzi.kr`).

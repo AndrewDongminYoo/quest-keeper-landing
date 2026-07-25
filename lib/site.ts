@@ -1,5 +1,5 @@
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://quest-keeper-landing.vercel.app";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://quest.donminzzi.kr";
 
 export const LOCALES = ["ko", "en"] as const;
 export type Locale = (typeof LOCALES)[number];
