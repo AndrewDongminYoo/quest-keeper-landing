@@ -36,11 +36,26 @@ export default async function LandingPage({
     author: { "@type": "Organization", name: "donminzzi lab" },
   };
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: locale,
+    mainEntity: t.faq.items.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: { "@type": "Answer", text: item.a },
+    })),
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
       {/* 히어로: 비대칭 스플릿 */}
@@ -199,6 +214,26 @@ export default async function LandingPage({
         >
           {t.privacy.link}
         </Link>
+      </section>
+
+      {/* FAQ: 특징 섹션과 같은 행 리스트 패턴 */}
+      <section className="mx-auto w-full max-w-3xl px-4 pt-24 sm:px-6">
+        <h2 className="font-pixel text-xl font-bold sm:text-2xl">
+          {t.faq.title}
+        </h2>
+        <div className="mt-8">
+          {t.faq.items.map((item) => (
+            <div
+              key={item.q}
+              className="border-b-2 border-line py-5 first:pt-0 last:border-b-0"
+            >
+              <h3 className="font-pixel text-sm font-bold">{item.q}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted">
+                {item.a}
+              </p>
+            </div>
+          ))}
+        </div>
       </section>
     </>
   );

@@ -63,6 +63,27 @@ export const dict = {
       body: "계정 없음, 서버 없음, 광고 없음, 추적 없음. Apple 기준 “수집된 데이터 없음”에 해당하는 앱입니다.",
       link: "개인정보처리방침 읽기",
     },
+    faq: {
+      title: "자주 묻는 질문",
+      items: [
+        {
+          q: "계정이 필요한가요?",
+          a: "아니요. 회원가입도 로그인도 없습니다. 앱을 설치하면 바로 사용할 수 있습니다.",
+        },
+        {
+          q: "데이터는 어디에 저장되나요?",
+          a: "모든 데이터는 기기 안에만 저장됩니다. 서버로 전송되지 않으며, Apple 기준 “수집된 데이터 없음”에 해당합니다.",
+        },
+        {
+          q: "어떤 기기에서 쓸 수 있나요?",
+          a: "iOS용 앱으로, App Store 출시를 준비하고 있습니다.",
+        },
+        {
+          q: "할 일을 제때 못 끝내면 어떻게 되나요?",
+          a: "미룰수록 몬스터가 강해집니다. 마감을 놓친 할 일은 오늘의 무덤에 잠깐 보였다가 다음 날 깔끔히 초기화되고, 부담 없이 다시 도전할 수 있습니다.",
+        },
+      ],
+    },
     footer: {
       developer: "만든 사람",
       developerName: "Dongmin Yu (Andrew)",
@@ -139,6 +160,27 @@ export const dict = {
       title: "Your data never leaves your device",
       body: "No accounts, no servers, no ads, no tracking. Under Apple's App Privacy standards this app qualifies as “Data Not Collected.”",
       link: "Read the privacy policy",
+    },
+    faq: {
+      title: "Frequently asked questions",
+      items: [
+        {
+          q: "Do I need an account?",
+          a: "No. There is no sign-up and no login. Install the app and start right away.",
+        },
+        {
+          q: "Where is my data stored?",
+          a: "Everything stays on your device. Nothing is sent to a server, and the app qualifies as “Data Not Collected” under Apple's App Privacy standards.",
+        },
+        {
+          q: "Which devices are supported?",
+          a: "Quest Keeper is an iOS app, coming soon to the App Store.",
+        },
+        {
+          q: "What happens if I miss a deadline?",
+          a: "The longer you stall, the stronger the monster grows. A missed task rests briefly in today's grave, resets cleanly the next day, and you can take it on again.",
+        },
+      ],
     },
     footer: {
       developer: "Developer",
