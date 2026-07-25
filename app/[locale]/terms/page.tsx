@@ -28,10 +28,7 @@ export default async function TermsPage({
   const html = await legalHtml("terms", locale);
   return (
     <div className="mx-auto w-full max-w-3xl px-4 pt-8 sm:px-6">
-      <article
-        className="legal"
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
+      <article className="legal" dangerouslySetInnerHTML={{ __html: html }} />
       <Link
         href={`/${locale}`}
         className="font-pixel mt-12 inline-block text-sm text-accent underline underline-offset-4"

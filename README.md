@@ -10,12 +10,12 @@ No component or animation libraries; visuals come from the app's own sprite shee
 
 ## Routes
 
-| Route | Content |
-| --- | --- |
-| `/` | Permanent redirect to `/ko` |
-| `/{ko,en}` | Landing page |
-| `/{ko,en}/privacy` | Privacy policy |
-| `/{ko,en}/terms` | Terms of service |
+| Route              | Content                     |
+| ------------------ | --------------------------- |
+| `/`                | Permanent redirect to `/ko` |
+| `/{ko,en}`         | Landing page                |
+| `/{ko,en}/privacy` | Privacy policy              |
+| `/{ko,en}/terms`   | Terms of service            |
 
 `sitemap.xml`, `robots.txt`, and the favicon are generated from `app/`.
 

@@ -74,15 +74,25 @@ export default async function LandingPage({
           aria-label={t.hero.sceneLabel}
           className="pixel-panel relative mx-auto flex h-64 w-full max-w-sm items-end justify-center gap-6 overflow-hidden px-6 pb-8"
         >
-          <Sprite name="coin" size={40} className="anim-bob-delay absolute top-6 right-8" />
+          <Sprite
+            name="coin"
+            size={40}
+            className="anim-bob-delay absolute top-6 right-8"
+          />
           <Sprite name="hero" size={120} className="anim-bob" />
           <Sprite name="slime" size={88} className="anim-bob-delay" />
-          <div className="absolute inset-x-0 bottom-0 h-4 bg-line" aria-hidden="true" />
+          <div
+            className="absolute inset-x-0 bottom-0 h-4 bg-line"
+            aria-hidden="true"
+          />
         </div>
       </section>
 
       {/* 성장 패널: 풀와이드 단일 패널 */}
-      <section id="growth" className="mx-auto w-full max-w-5xl scroll-mt-16 px-4 sm:px-6">
+      <section
+        id="growth"
+        className="mx-auto w-full max-w-5xl scroll-mt-16 px-4 sm:px-6"
+      >
         <div className="pixel-panel px-6 py-10 sm:px-10">
           <h2 className="font-pixel text-xl font-bold sm:text-2xl">
             {t.growth.title}
@@ -92,7 +102,10 @@ export default async function LandingPage({
           </p>
           <div className="mt-10 flex items-end justify-between gap-2 sm:justify-around">
             {t.growth.stages.map((stage, i) => (
-              <div key={stage.name} className="flex flex-col items-center gap-3">
+              <div
+                key={stage.name}
+                className="flex flex-col items-center gap-3"
+              >
                 <Sprite
                   name={stage.sprite as SpriteName}
                   size={56 + i * 36}

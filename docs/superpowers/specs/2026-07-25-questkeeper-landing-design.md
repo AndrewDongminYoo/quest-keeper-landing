@@ -17,12 +17,12 @@ The App Store Connect privacy-policy URL requirement (`quest-keeper/docs/store/a
 
 ## Routes
 
-| Route | Content |
-| --- | --- |
-| `/` | 308 redirect to `/ko` (next.config) |
-| `/{ko,en}` | Landing: split hero, monster-growth panel, daily-dungeon bento, feature split, privacy manifesto, footer |
-| `/{ko,en}/privacy` | Privacy policy (markdown-rendered) |
-| `/{ko,en}/terms` | Terms of service (markdown-rendered) |
+| Route              | Content                                                                                                  |
+| ------------------ | -------------------------------------------------------------------------------------------------------- |
+| `/`                | 308 redirect to `/ko` (next.config)                                                                      |
+| `/{ko,en}`         | Landing: split hero, monster-growth panel, daily-dungeon bento, feature split, privacy manifesto, footer |
+| `/{ko,en}/privacy` | Privacy policy (markdown-rendered)                                                                       |
+| `/{ko,en}/terms`   | Terms of service (markdown-rendered)                                                                     |
 
 ## Out of scope
 
