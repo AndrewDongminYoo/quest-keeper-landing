@@ -1,4 +1,4 @@
-import { SITE_URL } from "@/lib/site";
+import { APP_STORE_URL, SITE_URL } from "@/lib/site";
 
 export const dynamic = "force-static";
 
@@ -6,7 +6,7 @@ export const dynamic = "force-static";
 export function GET() {
   const body = `# Quest Keeper
 
-> Quest Keeper is a fully offline pixel RPG to-do app for iOS, coming soon to the App Store. Procrastinated tasks grow into monsters — finish before the deadline and your hero slays them in one strike. No accounts, no servers, no ads, no tracking; all data stays on the device, qualifying as "Data Not Collected" under Apple's App Privacy standards.
+> Quest Keeper is a fully offline pixel RPG to-do app for iOS, available on the App Store. Procrastinated tasks grow into monsters — finish before the deadline and your hero slays them in one strike. No accounts, no servers, no ads, no tracking; all data stays on the device, qualifying as "Data Not Collected" under Apple's App Privacy standards.
 
 Korean is the primary language (canonical pages live under /ko); English versions are at the same paths under /en. Published by donminzzi lab.
 
@@ -18,6 +18,7 @@ Korean is the primary language (canonical pages live under /ko); English version
 - [Privacy Policy (English)](${SITE_URL}/en/privacy): convenience translation
 - [Terms of Service (Korean)](${SITE_URL}/ko/terms): the Korean original prevails
 - [Terms of Service (English)](${SITE_URL}/en/terms): convenience translation
+- [Download on the App Store](${APP_STORE_URL})
 `;
   return new Response(body, {
     headers: { "Content-Type": "text/plain; charset=utf-8" },

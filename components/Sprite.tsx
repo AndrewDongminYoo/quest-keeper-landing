@@ -10,6 +10,13 @@ const SPRITES = {
   hit: [3, 1],
 } as const;
 
+const ANIMATED_SPRITES: Partial<Record<keyof typeof SPRITES, string>> = {
+  hero: "/sprites/hero.gif",
+  slime: "/sprites/slime.gif",
+  skeleton: "/sprites/skeleton.gif",
+  dragon: "/sprites/dragon.gif",
+};
+
 export type SpriteName = keyof typeof SPRITES;
 
 export function Sprite({
@@ -17,14 +24,17 @@ export function Sprite({
   size = 96,
   className = "",
   label,
+  animated = false,
 }: {
   name: SpriteName;
   size?: number;
   className?: string;
   /** 의미 있는 이미지일 때만 지정. 없으면 장식으로 취급해 스크린리더에서 숨김. */
   label?: string;
+  animated?: boolean;
 }) {
   const [col, row] = SPRITES[name];
+  const animatedSource = animated ? ANIMATED_SPRITES[name] : undefined;
   return (
     <span
       role={label ? "img" : undefined}
@@ -34,9 +44,11 @@ export function Sprite({
       style={{
         width: size,
         height: size,
-        backgroundImage: "url(/sprites/dungeon-sheet.png)",
-        backgroundSize: "400% 200%",
-        backgroundPosition: `${(col * 100) / 3}% ${row * 100}%`,
+        backgroundImage: `url(${animatedSource ?? "/sprites/dungeon-sheet.png"})`,
+        backgroundSize: animatedSource ? "cover" : "400% 200%",
+        backgroundPosition: animatedSource
+          ? "center"
+          : `${(col * 100) / 3}% ${row * 100}%`,
         backgroundRepeat: "no-repeat",
         imageRendering: "pixelated",
       }}

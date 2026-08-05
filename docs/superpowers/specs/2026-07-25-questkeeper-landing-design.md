@@ -13,7 +13,7 @@ The App Store Connect privacy-policy URL requirement (`quest-keeper/docs/store/a
 - **Design**: pixel RPG, dark-only theme (dungeon brand identity overrides dual-mode default). Galmuri pixel font (OFL, self-hosted woff2) for display/UI, system sans for long body text. Visual assets come from the app's own sprite sheet (`public/sprites/dungeon-sheet.png`, 1774x887, 4x2 grid: hero, fallen hero, slime, skeleton / dragon, grave, coin, hit effect) rendered via CSS background-position, `image-rendering: pixelated`. Single accent color: coin gold. Motion: CSS `steps()` micro-animations only, gated behind `prefers-reduced-motion`.
 - **SEO**: Metadata API with per-locale title/description from the ASO copy (`docs/store/app-store-listing.md`), canonical + hreflang alternates, OpenGraph/Twitter cards (static OG image downscaled from the sprite sheet), `sitemap.ts`, `robots.ts`, JSON-LD `MobileApplication` on the landing page.
 - **Developer info**: footer block with Dongmin Yu, GitHub profile link (`AndrewDongminYoo`), contact `ydm2790@gmail.com`.
-- **CTA**: App Store link does not exist yet; the primary CTA is a non-interactive "App Store 출시 예정" badge. Swap to a real `apps.apple.com` link at release.
+- **CTA**: The primary CTA links to the released App Store listing at `https://apps.apple.com/kr/app/quest-keeper/id6794192291`.
 
 ## Routes
 

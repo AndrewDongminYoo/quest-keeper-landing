@@ -1,6 +1,9 @@
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://quest.donminzzi.kr";
 
+export const APP_STORE_URL =
+  "https://apps.apple.com/kr/app/quest-keeper/id6794192291";
+
 export const LOCALES = ["ko", "en"] as const;
 export type Locale = (typeof LOCALES)[number];
 

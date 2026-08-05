@@ -2,7 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Sprite, type SpriteName } from "@/components/Sprite";
 import { dict } from "@/lib/dictionaries";
-import { SITE_URL, isLocale, localizedAlternates } from "@/lib/site";
+import {
+  APP_STORE_URL,
+  SITE_URL,
+  isLocale,
+  localizedAlternates,
+} from "@/lib/site";
 import { notFound } from "next/navigation";
 
 export async function generateMetadata({
@@ -70,12 +75,14 @@ export default async function LandingPage({
             {t.hero.sub}
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <span
-              aria-disabled="true"
-              className="pixel-btn font-pixel inline-flex h-12 items-center bg-accent px-5 text-sm font-bold text-bg"
+            <a
+              href={APP_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pixel-btn font-pixel inline-flex h-12 items-center bg-accent px-5 text-sm font-bold text-bg transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
             >
-              {t.hero.badge}
-            </span>
+              {t.hero.primary}
+            </a>
             <a
               href="#growth"
               className="font-pixel text-sm text-muted underline underline-offset-4 hover:text-ink"
@@ -94,8 +101,8 @@ export default async function LandingPage({
             size={40}
             className="anim-bob-delay absolute top-6 right-8"
           />
-          <Sprite name="hero" size={120} className="anim-bob" />
-          <Sprite name="slime" size={88} className="anim-bob-delay" />
+          <Sprite name="hero" size={120} animated />
+          <Sprite name="slime" size={88} animated />
           <div
             className="absolute inset-x-0 bottom-0 h-4 bg-line"
             aria-hidden="true"
@@ -125,6 +132,7 @@ export default async function LandingPage({
                   name={stage.sprite as SpriteName}
                   size={56 + i * 36}
                   label={stage.name}
+                  animated
                 />
                 <span className="font-pixel text-xs text-muted">
                   {stage.label}

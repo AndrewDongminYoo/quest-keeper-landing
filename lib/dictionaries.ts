@@ -11,7 +11,7 @@ export const dict = {
     hero: {
       title: ["할 일을 사냥하는", "픽셀 RPG 투두"],
       sub: "미룬 할 일은 몬스터가 되어 자라나고, 마감 전에 끝내면 용사가 단칼에 처치합니다.",
-      badge: "App Store 출시 예정",
+      primary: "App Store에서 다운로드",
       secondary: "동작 방식 보기",
       sceneLabel: "픽셀 용사가 슬라임 몬스터와 마주보고 있는 장면",
     },
@@ -76,7 +76,7 @@ export const dict = {
         },
         {
           q: "어떤 기기에서 쓸 수 있나요?",
-          a: "iOS용 앱으로, App Store 출시를 준비하고 있습니다.",
+          a: "iOS용 앱으로, App Store에서 다운로드할 수 있습니다.",
         },
         {
           q: "할 일을 제때 못 끝내면 어떻게 되나요?",
@@ -109,7 +109,7 @@ export const dict = {
     hero: {
       title: ["Hunt your to-dos in", "a pixel RPG"],
       sub: "Procrastinated tasks grow into monsters. Finish before the deadline and your hero slays them in one strike.",
-      badge: "Coming soon to the App Store",
+      primary: "Download on the App Store",
       secondary: "See how it works",
       sceneLabel: "A pixel hero facing a slime monster",
     },
@@ -174,7 +174,7 @@ export const dict = {
         },
         {
           q: "Which devices are supported?",
-          a: "Quest Keeper is an iOS app, coming soon to the App Store.",
+          a: "Quest Keeper is available for iOS on the App Store.",
         },
         {
           q: "What happens if I miss a deadline?",
