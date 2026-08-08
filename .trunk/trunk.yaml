@@ -3,31 +3,40 @@
 version: 0.1
 cli:
   version: 1.25.0
+# Trunk provides extensibility via plugins. (https://docs.trunk.io/plugins)
+plugins:
+  sources:
+    - id: trunk
+      ref: v1.11.0
+      uri: https://github.com/trunk-io/plugins
 # Many linters and tools depend on runtimes - configure them here. (https://docs.trunk.io/runtimes)
 runtimes:
   enabled:
     # node@18 can't run markdownlint-cli 0.49.1 (uses a regex `v` flag needing node 20+);
     # bumped to the trunk-plugins known_good node version, which also covers prettier/svgo.
     - node@22.16.0
-    - python@3.10.8
+    - python@3.14.4
 # This is the section where you manage your linters. (https://docs.trunk.io/check/configuration)
 lint:
   enabled:
-    - checkov@3.3.8
+    - eslint@9.39.5
+    - grype@0.116.1
+    - checkov@3.3.9
     - git-diff-check
     - markdownlint@0.49.1
-    - oxipng@7.0.0
+    - oxipng@10.1.1
     - prettier@3.9.6
     - svgo@4.0.2
-    - trivy@0.70.0
-    - trufflehog@3.31.3
+    - osv-scanner@2.5.0
+    - trufflehog@3.96.0
     - yamllint@1.38.0
-  disabled:
+  ignore:
     # osv-scanner: versions that parse pnpm lockfileVersion 9.0 (>=1.7.3) ship only an
     # unversioned darwin_arm64 asset, which trunk CLI 1.25.0 fails to download (404 on the
     # old versioned URL). Until trunk fixes its download-constraint evaluation, run
     # `osv-scanner scan --lockfile pnpm-lock.yaml` directly instead.
-    - osv-scanner
+    - linters: [osv-scanner]
+      paths: [pnpm-lock.yaml]
 actions:
   enabled:
     - trunk-announce
