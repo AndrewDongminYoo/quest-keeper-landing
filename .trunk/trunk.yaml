@@ -19,7 +19,7 @@ runtimes:
 # This is the section where you manage your linters. (https://docs.trunk.io/check/configuration)
 lint:
   enabled:
-    - eslint@9.39.5
+    - eslint@10.8.1
     - grype@0.116.1
     - checkov@3.3.9
     - git-diff-check
@@ -31,6 +31,8 @@ lint:
     - trufflehog@3.96.0
     - yamllint@1.38.0
   ignore:
+    - linters: [markdownlint]
+      paths: [content/legal/*.md]
     # osv-scanner: versions that parse pnpm lockfileVersion 9.0 (>=1.7.3) ship only an
     # unversioned darwin_arm64 asset, which trunk CLI 1.25.0 fails to download (404 on the
     # old versioned URL). Until trunk fixes its download-constraint evaluation, run
