@@ -24,6 +24,31 @@ export const dict = {
         { name: "드래곤", label: "위험", sprite: "dragon" },
       ],
     },
+    showcase: {
+      title: ["나만의 용사로,", "오늘의 퀘스트에 맞서세요"],
+      body: "직접 성별과 머리색을 고른 용사가, 완료 순간 검을 휘둘러 몬스터를 처치합니다.",
+      genderLabel: "성별",
+      genders: ["남성", "여성"],
+      hairLabel: "머리색",
+      hairColors: ["검정", "갈색", "파랑", "빨강"],
+      heroLabel: "용사",
+      attack: "공격",
+      battleStates: ["전투 준비", "공격 준비 중", "공격 중", "승리"],
+      monstersTitle: "9종의 몬스터가 기다립니다",
+      monstersBody:
+        "퀘스트의 난이도에 따라 슬라임부터 리치까지, 서로 다른 몬스터가 던전에 나타납니다.",
+      monsterNames: [
+        "슬라임",
+        "박쥐",
+        "버섯",
+        "스켈레톤",
+        "오크",
+        "미믹",
+        "드래곤",
+        "골렘",
+        "리치",
+      ],
+    },
     loop: {
       title: "하루가 곧 던전입니다",
       cells: [
@@ -79,6 +104,10 @@ export const dict = {
           a: "iOS용 앱으로, App Store에서 다운로드할 수 있습니다.",
         },
         {
+          q: "용사 외형을 바꿀 수 있나요?",
+          a: "네. 성별과 네 가지 머리색을 직접 골라 나만의 용사 외형을 만들 수 있습니다.",
+        },
+        {
           q: "할 일을 제때 못 끝내면 어떻게 되나요?",
           a: "미룰수록 몬스터가 강해집니다. 마감을 놓친 할 일은 오늘의 무덤에 잠깐 보였다가 다음 날 깔끔히 초기화되고, 부담 없이 다시 도전할 수 있습니다.",
         },
@@ -120,6 +149,31 @@ export const dict = {
         { name: "Slime", label: "Calm", sprite: "slime" },
         { name: "Skeleton", label: "Closing in", sprite: "skeleton" },
         { name: "Dragon", label: "Danger", sprite: "dragon" },
+      ],
+    },
+    showcase: {
+      title: ["Your hero, your way,", "ready for today's quest"],
+      body: "Choose your hero's gender and hair color directly, then watch them swing their sword when you complete a quest.",
+      genderLabel: "Gender",
+      genders: ["Male", "Female"],
+      hairLabel: "Hair color",
+      hairColors: ["Black", "Brown", "Blue", "Red"],
+      heroLabel: "hero",
+      attack: "Attack",
+      battleStates: ["Ready to fight", "Winding up", "Attacking", "Victory"],
+      monstersTitle: "Nine monsters await",
+      monstersBody:
+        "From slimes to liches, different monsters appear in your dungeon as quests become more challenging.",
+      monsterNames: [
+        "Slime",
+        "Bat",
+        "Mushroom",
+        "Skeleton",
+        "Orc",
+        "Mimic",
+        "Dragon",
+        "Golem",
+        "Lich",
       ],
     },
     loop: {
@@ -175,6 +229,10 @@ export const dict = {
         {
           q: "Which devices are supported?",
           a: "Quest Keeper is available for iOS on the App Store.",
+        },
+        {
+          q: "Can I customize my hero?",
+          a: "Yes. You can choose your hero's gender and one of four hair colors to make the appearance your own.",
         },
         {
           q: "What happens if I miss a deadline?",

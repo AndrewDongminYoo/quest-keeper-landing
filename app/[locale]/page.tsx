@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BattleShowcase } from "@/components/BattleShowcase";
 import { Sprite, type SpriteName } from "@/components/Sprite";
 import { dict } from "@/lib/dictionaries";
 import {
@@ -142,6 +143,8 @@ export default async function LandingPage({
           </div>
         </div>
       </section>
+
+      <BattleShowcase content={t.showcase} />
 
       {/* 하루 루프: 벤토 (1 와이드 + 2) */}
       <section className="mx-auto w-full max-w-5xl px-4 pt-24 sm:px-6">
