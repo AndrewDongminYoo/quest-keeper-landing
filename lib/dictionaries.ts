@@ -36,7 +36,7 @@ export const dict = {
       battleStates: ["전투 준비", "공격 준비 중", "공격 중", "승리"],
       monstersTitle: "9종의 몬스터가 기다립니다",
       monstersBody:
-        "퀘스트의 난이도에 따라 슬라임부터 리치까지, 서로 다른 몬스터가 던전에 나타납니다.",
+        "퀘스트의 난이도에 따라 슬라임부터 리치까지, 서로 다른 몬스터가 던전에 나타납니다. 몬스터를 누르면 왜 그 모습이 되었는지 알려 줍니다.",
       monsterNames: [
         "슬라임",
         "박쥐",
@@ -76,6 +76,14 @@ export const dict = {
         {
           title: "마감 알림",
           body: "필요한 순간에만 울리는 로컬 알림. 원격 푸시는 쓰지 않습니다.",
+        },
+        {
+          title: "단축어와 Siri",
+          body: "iOS 단축어와 Siri로 앱을 열지 않고도 퀘스트를 만들 수 있습니다.",
+        },
+        {
+          title: "한국어와 영어",
+          body: "모든 화면과 알림, 위젯이 기기 언어에 맞춰 표시됩니다.",
         },
         {
           title: "계정도 광고도 없음",
@@ -163,7 +171,7 @@ export const dict = {
       battleStates: ["Ready to fight", "Winding up", "Attacking", "Victory"],
       monstersTitle: "Nine monsters await",
       monstersBody:
-        "From slimes to liches, different monsters appear in your dungeon as quests become more challenging.",
+        "From slimes to liches, different monsters appear in your dungeon as quests become more challenging. Tap a monster to find out why it looks the way it does.",
       monsterNames: [
         "Slime",
         "Bat",
@@ -203,6 +211,14 @@ export const dict = {
         {
           title: "Deadline alerts",
           body: "Local notifications that fire only when needed. No remote push.",
+        },
+        {
+          title: "Shortcuts and Siri",
+          body: "Create a quest from Shortcuts or Siri without opening the app.",
+        },
+        {
+          title: "Korean and English",
+          body: "Every screen, notification, and widget follows your device language.",
         },
         {
           title: "No accounts, no ads",

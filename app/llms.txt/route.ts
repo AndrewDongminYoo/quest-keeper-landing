@@ -6,9 +6,9 @@ export const dynamic = "force-static";
 export function GET() {
   const body = `# Quest Keeper
 
-> Quest Keeper is a fully offline pixel RPG to-do app for iOS, available on the App Store. Procrastinated tasks grow into monsters — finish before the deadline and your hero slays them in one strike. No accounts, no servers, no ads, no tracking; all data stays on the device, qualifying as "Data Not Collected" under Apple's App Privacy standards.
+> Quest Keeper is a fully offline pixel RPG to-do app for iOS, available on the App Store. Procrastinated tasks grow into monsters — finish before the deadline and your hero slays them in one strike. The app is localized in Korean and English and follows the device language across every screen, notification, and widget; quests can also be created from Shortcuts or Siri without opening the app. No accounts, no servers, no ads, no tracking; all data stays on the device, qualifying as "Data Not Collected" under Apple's App Privacy standards.
 
-Korean is the primary language (canonical pages live under /ko); English versions are at the same paths under /en. Published by donminzzi lab.
+Korean is this site's primary language (canonical pages live under /ko); English versions are at the same paths under /en. Published by donminzzi lab.
 
 ## Pages
 
