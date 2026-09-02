@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Analytics } from "@vercel/analytics/next";
 import "../globals.css";
 import { dict } from "@/lib/dictionaries";
 import { LOCALES, SITE_URL, isLocale, type Locale } from "@/lib/site";
@@ -150,6 +151,7 @@ export default async function LocaleLayout({
             </p>
           </div>
         </footer>
+        <Analytics />
       </body>
     </html>
   );
