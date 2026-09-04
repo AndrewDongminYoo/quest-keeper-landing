@@ -4,7 +4,13 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import "../globals.css";
 import { dict } from "@/lib/dictionaries";
-import { LOCALES, SITE_URL, isLocale, type Locale } from "@/lib/site";
+import {
+  LOCALES,
+  PRODUCT_NAME,
+  SITE_URL,
+  isLocale,
+  type Locale,
+} from "@/lib/site";
 
 const galmuri = localFont({
   src: [
@@ -37,10 +43,10 @@ export async function generateMetadata({
   const t = dict[locale];
   return {
     metadataBase: new URL(SITE_URL),
-    title: { default: t.meta.title, template: "%s | Quest Keeper" },
+    title: { default: t.meta.title, template: `%s | ${PRODUCT_NAME}` },
     description: t.meta.description,
     openGraph: {
-      siteName: "Quest Keeper",
+      siteName: PRODUCT_NAME,
       type: "website",
       locale: locale === "ko" ? "ko_KR" : "en_US",
       images: [{ url: "/og.png", width: 1200, height: 630 }],
@@ -64,7 +70,7 @@ export default async function LocaleLayout({
   const websiteJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Quest Keeper",
+    name: PRODUCT_NAME,
     url: SITE_URL,
     inLanguage: locale,
     publisher: { "@type": "Organization", name: "donminzzi lab" },

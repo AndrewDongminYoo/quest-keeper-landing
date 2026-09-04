@@ -1,4 +1,4 @@
-# Privacy Policy — Quest Keeper
+# Privacy Policy — TODO Slayer
 
 > This is an English translation provided for convenience. In case of any discrepancy, the Korean version prevails.
 
@@ -8,10 +8,15 @@
 
 ## 1. Summary
 
-Quest Keeper (the "App") is a **fully local, offline-only app**.
+TODO Slayer (the "App") is a **local-first app**.
 The App does **not collect or transmit any personal information.**
-There are no accounts, no logins, no servers, no ads, and no analytics tools.
+There are no accounts, no logins, no Developer servers, no ads, and no analytics tools.
 All data you enter is stored only on your device.
+
+The App communicates externally only for its **in-app purchase (Tip Jar)** feature, and it communicates only with Apple's App Store (§5).
+Opening the About screen loads product information to display Tip Jar prices, so this communication occurs even if you do not make a purchase.
+If a Tip Jar purchase is pending approval, such as Family Sharing approval, the App may also communicate when it launches to receive the purchase result.
+The App does not use the network if you have never attempted a Tip Jar purchase or opened the About screen.
 
 ## 2. Personal Information We Collect
 
@@ -36,17 +41,25 @@ The App uses only the device's **local notifications (UserNotifications)** for d
 It does not use remote push (APNs), so no data is transmitted externally for notifications.
 You can turn off notification permission at any time in iOS Settings, and the App's core features work even if you decline.
 
-## 5. Third Parties, Analytics, and Advertising
+## 5. Third Parties, Analytics, Advertising, and In-App Purchases
 
-The App contains **no** third-party analytics SDKs, ad networks, cloud sync (such as CloudKit), or external API calls.
-Therefore, no data is provided to or sold to third parties.
+The App contains **no** third-party analytics SDKs, ad networks, or cloud sync such as CloudKit.
+The Developer operates no server, and no data is provided to or sold to third parties.
+
+**The in-app purchase (Tip Jar) is the only exception.** The App offers optional purchases that support development. These purchases do not affect game progress, and all features remain available without a purchase.
+
+- The App **communicates with Apple's App Store** when you open the About screen or attempt a Tip Jar purchase. This communication loads the product list and prices and processes the purchase.
+- **Apple processes the purchase in full.** The Developer does not receive or see your payment method, name, email address, or Apple Account information.
+- The App verifies Apple's signature **on your device** to confirm that the transaction is valid. The App does not send receipts to a Developer server.
+- The App does not store whether you made a Tip Jar purchase or the purchase amount.
+- Apple collects any payment information processed during this transaction. [Apple's Privacy Policy](https://www.apple.com/legal/privacy/) applies.
 
 ## 6. Data Retention and Deletion
 
 - Data is kept on your device until you delete it or delete the App.
 - Individual quests can be deleted within the App. However, **usage event records (§3) related to a quest are not deleted along with the quest** and remain in on-device storage.
 - **Deleting the App** removes all related data from the device and App Group storage, including usage event records.
-- Because the App is local-only, the Developer cannot access your data, and no separate deletion-request process is required.
+- Because the App stores its data only on your device, the Developer cannot access your data, and no separate deletion-request process is required.
 
 ## 7. Children's Privacy
 

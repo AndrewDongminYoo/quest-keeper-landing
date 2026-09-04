@@ -1,12 +1,12 @@
-import { APP_STORE_URL, SITE_URL } from "@/lib/site";
+import { APP_STORE_URL, PRODUCT_NAME, SITE_URL } from "@/lib/site";
 
 export const dynamic = "force-static";
 
 // llms.txt (https://llmstxt.org): LLM 크롤러용 사이트 요약. 카피 변경 시 함께 갱신.
 export function GET() {
-  const body = `# Quest Keeper
+  const body = `# ${PRODUCT_NAME}
 
-> Quest Keeper is a fully offline pixel RPG to-do app for iOS, available on the App Store. Procrastinated tasks grow into monsters — finish before the deadline and your hero slays them in one strike. The app is localized in Korean and English and follows the device language across every screen, notification, and widget; quests can also be created from Shortcuts or Siri without opening the app. No accounts, no servers, no ads, no tracking; all data stays on the device, qualifying as "Data Not Collected" under Apple's App Privacy standards.
+> ${PRODUCT_NAME} is a local-first pixel RPG to-do app for iOS, available on the App Store. Procrastinated tasks grow into monsters — finish before the deadline and your hero slays them in one strike. The app is localized in Korean and English and follows the device language across every screen, notification, and widget; quests can also be created from Shortcuts or Siri without opening the app. No accounts, no developer servers, no ads, no tracking; all app data stays on the device, qualifying as "Data Not Collected" under Apple's App Privacy standards. The optional Tip Jar communicates only with Apple's App Store to load product information and process purchases.
 
 Korean is this site's primary language (canonical pages live under /ko); English versions are at the same paths under /en. Published by donminzzi lab.
 

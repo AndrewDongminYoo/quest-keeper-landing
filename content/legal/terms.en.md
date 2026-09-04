@@ -1,4 +1,4 @@
-# Terms of Service — Quest Keeper
+# Terms of Service — TODO Slayer
 
 > This is an English translation provided for convenience. In case of any discrepancy, the Korean version prevails.
 
@@ -8,15 +8,15 @@
 
 ## 1. Application of These Terms
 
-These Terms govern the rights and obligations between the Developer and users regarding the use of Quest Keeper (the "App").
+These Terms govern the rights and obligations between the Developer and users regarding the use of TODO Slayer (the "App").
 By downloading or using the App, you are deemed to have agreed to these Terms.
 The App is distributed through the Apple App Store, and the App Store terms (Apple Media Services Terms) also apply.
 
 ## 2. The Service
 
-- The App is a **local-only, offline productivity app** that helps you manage your to-dos with game elements.
+- The App is a **local-only productivity app** that helps you manage your to-dos with game elements. Data is stored on your device, and the only feature that communicates externally is the optional in-app purchase (Tip Jar).
 - It represents deadlines and completions as dungeon exploration and victories, and aims not to punish failure by accumulating it permanently.
-- The App operates on a single device without accounts, servers, or sync.
+- The App operates on a single device without accounts, Developer servers, or sync. Apple processes Tip Jar purchases, and the Developer does not receive payment information.
 
 ## 3. License
 

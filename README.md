@@ -1,6 +1,6 @@
-# Quest Keeper Landing
+# TODO Slayer Landing
 
-Marketing landing page and legal document host for Quest Keeper, a pixel RPG to-do app for iOS.
+Marketing landing page and legal document host for TODO Slayer, a pixel RPG to-do app for iOS.
 Serves the privacy-policy and terms URLs required by App Store Connect.
 
 ## Stack
