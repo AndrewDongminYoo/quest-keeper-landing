@@ -189,6 +189,41 @@ export default async function LandingPage({
         </div>
       </section>
 
+      {/* 꾸준함: 장기 사용 흐름을 보여주는 2×2 패널 */}
+      <section className="mx-auto w-full max-w-5xl px-4 pt-24 sm:px-6">
+        <div className="grid gap-6 lg:grid-cols-[2fr_3fr] lg:items-end lg:gap-10">
+          <div>
+            <p className="font-pixel text-xs tracking-wider text-accent">
+              {t.momentum.eyebrow}
+            </p>
+            <h2 className="font-pixel mt-4 max-w-[22ch] text-xl leading-relaxed font-bold sm:text-2xl">
+              {t.momentum.title}
+            </h2>
+          </div>
+          <p className="max-w-[54ch] text-sm leading-relaxed text-muted sm:text-base">
+            {t.momentum.body}
+          </p>
+        </div>
+        <ul className="mt-8 grid gap-5 sm:grid-cols-2">
+          {t.momentum.items.map((item, index) => (
+            <li key={item.title} className="pixel-panel p-6 sm:p-7">
+              <div className="flex items-center gap-3" aria-hidden="true">
+                <span className="font-pixel text-xs text-accent">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <span className="h-0.5 flex-1 bg-line" />
+              </div>
+              <h3 className="font-pixel mt-5 text-sm font-bold">
+                {item.title}
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted">
+                {item.body}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </section>
+
       {/* 특징: 2단 스플릿 (좌 헤딩 / 우 행 리스트) */}
       <section className="mx-auto grid w-full max-w-5xl gap-10 px-4 pt-24 sm:px-6 lg:grid-cols-[2fr_3fr]">
         <h2 className="font-pixel text-xl leading-relaxed font-bold sm:text-2xl">

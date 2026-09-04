@@ -66,6 +66,29 @@ export const dict = {
         },
       ],
     },
+    momentum: {
+      eyebrow: "꾸준함을 위한 네 가지 장치",
+      title: "하루를 넘어서, 꾸준함을 기록하세요",
+      body: "반복할 일은 루틴으로 이어가고, 끝낸 퀘스트는 명예의 전당에서 돌아보세요. 주간 회고가 지난 모험을 정리하고 다음 주를 준비하도록 도와줍니다.",
+      items: [
+        {
+          title: "데일리 루틴",
+          body: "매일 반복하는 일을 한 번 등록하고, 오늘의 퀘스트로 다시 만나세요.",
+        },
+        {
+          title: "명예의 전당",
+          body: "완료한 퀘스트를 모아 작은 승리가 쌓인 기록을 돌아보세요.",
+        },
+        {
+          title: "주간 회고",
+          body: "지난주를 정리하고 새 주에 도전할 퀘스트를 계획하세요.",
+        },
+        {
+          title: "재방문 알림",
+          body: "원할 때만 켜고, 다시 시작하고 싶은 시간에 로컬 알림을 받으세요.",
+        },
+      ],
+    },
     features: {
       title: ["가볍고, 조용하고,", "기기 안에서"],
       rows: [
@@ -198,6 +221,29 @@ export const dict = {
         {
           title: "Retry tomorrow",
           body: "Push a deadline without guilt and take it on again in a fresh dungeon.",
+        },
+      ],
+    },
+    momentum: {
+      eyebrow: "Four ways to keep your momentum",
+      title: "Build a rhythm, not just a checklist",
+      body: "Turn repeated work into routines, revisit completed quests in the Hall of Fame, and use a weekly review to plan what comes next.",
+      items: [
+        {
+          title: "Daily routines",
+          body: "Set up repeated work once and meet it again as a quest in today's dungeon.",
+        },
+        {
+          title: "Hall of Fame",
+          body: "Look back on completed quests and see how your small victories add up.",
+        },
+        {
+          title: "Weekly review",
+          body: "Close out the week that ended, then plan quests for the week ahead.",
+        },
+        {
+          title: "Gentle reminders",
+          body: "Opt in to a local reminder when you want a gentle nudge to return.",
         },
       ],
     },
