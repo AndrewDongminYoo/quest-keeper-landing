@@ -5,6 +5,7 @@ import { Sprite, type SpriteName } from "@/components/Sprite";
 import { dict } from "@/lib/dictionaries";
 import {
   APP_STORE_URL,
+  PRODUCT_NAME,
   SITE_URL,
   isLocale,
   localizedAlternates,
@@ -33,7 +34,7 @@ export default async function LandingPage({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "MobileApplication",
-    name: "Quest Keeper",
+    name: PRODUCT_NAME,
     description: t.meta.description,
     operatingSystem: "iOS",
     applicationCategory: "Productivity",

@@ -1,5 +1,6 @@
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://quest.donminzzi.kr";
+export const PRODUCT_NAME = "TODO Slayer";
 
 // 스토어프론트를 고정하지 않는 형태 — Apple이 방문자 국가 스토어로 리다이렉트한다.
 export const APP_STORE_URL = "https://apps.apple.com/app/id6794192291";

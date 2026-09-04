@@ -1,13 +1,13 @@
-import type { Locale } from "./site";
+import { PRODUCT_NAME, type Locale } from "./site";
 
 export const dict = {
   ko: {
     meta: {
-      title: "Quest Keeper | 할 일을 사냥하는 픽셀 RPG 투두",
+      title: `${PRODUCT_NAME} | 할 일을 사냥하는 픽셀 RPG 투두`,
       description:
-        "미룬 할 일이 몬스터가 되어 자라납니다. 마감 전에 완료하면 용사가 단칼에 처치! 계정도 광고도 없는 완전한 오프라인 픽셀 RPG 투두 앱.",
+        "미룬 할 일이 몬스터가 되어 자라납니다. 마감 전에 완료하면 용사가 단칼에 처치! 계정도 광고도 없고 데이터가 기기 안에 머무는 픽셀 RPG 투두 앱.",
     },
-    nav: { langLabel: "언어 선택", brand: "Quest Keeper" },
+    nav: { langLabel: "언어 선택", brand: PRODUCT_NAME },
     hero: {
       title: ["할 일을 사냥하는", "픽셀 RPG 투두"],
       sub: "미룬 할 일은 몬스터가 되어 자라나고, 마감 전에 끝내면 용사가 단칼에 처치합니다.",
@@ -67,7 +67,7 @@ export const dict = {
       ],
     },
     features: {
-      title: ["가볍고, 조용하고,", "오프라인"],
+      title: ["가볍고, 조용하고,", "기기 안에서"],
       rows: [
         {
           title: "홈 화면 위젯",
@@ -87,13 +87,13 @@ export const dict = {
         },
         {
           title: "계정도 광고도 없음",
-          body: "완전한 오프라인, 단일 기기. 모든 데이터는 기기 안에만 저장됩니다.",
+          body: "단일 기기에서 사용하며, 모든 앱 데이터는 기기 안에만 저장됩니다.",
         },
       ],
     },
     privacy: {
-      title: "데이터는 당신의 기기를 떠나지 않습니다",
-      body: "계정 없음, 서버 없음, 광고 없음, 추적 없음. Apple 기준 “수집된 데이터 없음”에 해당하는 앱입니다.",
+      title: "앱 데이터는 기기 안에 남습니다",
+      body: "계정 없음, 개발자 서버 없음, 광고 없음, 추적 없음. 선택적 후원은 가격 조회와 결제 처리에만 Apple App Store와 통신합니다.",
       link: "개인정보처리방침 읽기",
     },
     faq: {
@@ -138,11 +138,11 @@ export const dict = {
   },
   en: {
     meta: {
-      title: "Quest Keeper | The pixel RPG to-do list",
+      title: `${PRODUCT_NAME} | The pixel RPG to-do list`,
       description:
-        "Procrastinated tasks grow into monsters. Finish before the deadline and your hero slays them in one strike. A fully offline pixel RPG to-do app with no accounts and no ads.",
+        "Procrastinated tasks grow into monsters. Finish before the deadline and your hero slays them in one strike. A local-first pixel RPG to-do app with no accounts and no ads.",
     },
-    nav: { langLabel: "Select language", brand: "Quest Keeper" },
+    nav: { langLabel: "Select language", brand: PRODUCT_NAME },
     hero: {
       title: ["Hunt your to-dos in", "a pixel RPG"],
       sub: "Procrastinated tasks grow into monsters. Finish before the deadline and your hero slays them in one strike.",
@@ -202,7 +202,7 @@ export const dict = {
       ],
     },
     features: {
-      title: ["Light, quiet,", "offline"],
+      title: ["Light, quiet,", "on-device"],
       rows: [
         {
           title: "Home screen widget",
@@ -222,13 +222,13 @@ export const dict = {
         },
         {
           title: "No accounts, no ads",
-          body: "Fully offline, single device. All your data stays on your device.",
+          body: "Built for one device. All your app data stays on your device.",
         },
       ],
     },
     privacy: {
-      title: "Your data never leaves your device",
-      body: "No accounts, no servers, no ads, no tracking. Under Apple's App Privacy standards this app qualifies as “Data Not Collected.”",
+      title: "Your app data stays on your device",
+      body: "No accounts, developer servers, ads, or tracking. The optional Tip Jar contacts Apple's App Store only to load prices and process purchases.",
       link: "Read the privacy policy",
     },
     faq: {
@@ -244,7 +244,7 @@ export const dict = {
         },
         {
           q: "Which devices are supported?",
-          a: "Quest Keeper is available for iOS on the App Store.",
+          a: `${PRODUCT_NAME} is available for iOS on the App Store.`,
         },
         {
           q: "Can I customize my hero?",
