@@ -2,7 +2,7 @@
 
 > This is an English translation provided for convenience. In case of any discrepancy, the Korean version prevails.
 
-**Effective date:** 2026-07-25
+**Effective date:** 2026-09-16
 **Publisher:** donminzzi lab (the "Developer")
 **Contact:** ydm2790@gmail.com
 
@@ -14,9 +14,9 @@ The App is distributed through the Apple App Store, and the App Store terms (App
 
 ## 2. The Service
 
-- The App is a **local-only productivity app** that helps you manage your to-dos with game elements. Data is stored on your device, and the only feature that communicates externally is the optional in-app purchase (Tip Jar).
+- The App is a **local-first productivity app** that helps you manage your to-dos with game elements. Original quest data is stored on your device. External communication is limited to optional in-app purchases (Tip Jar) and aggregate report sharing that you start yourself.
 - It represents deadlines and completions as dungeon exploration and victories, and aims not to punish failure by accumulating it permanently.
-- The App operates on a single device without accounts, Developer servers, or sync. Apple processes Tip Jar purchases, and the Developer does not receive payment information.
+- The App operates on a single device without accounts, Developer servers, or sync. Apple processes Tip Jar purchases, and the Developer does not receive payment information. A usage report is transmitted only after you review what it includes and choose a recipient in the iOS share sheet.
 
 ## 3. License
 
@@ -25,7 +25,7 @@ You may not reverse engineer, copy without authorization, redistribute, or comme
 
 ## 4. Your Responsibilities and Data Backup
 
-- The App stores data **only on your device** and does not provide cloud backup or sync.
+- The App stores original quest and usage event data **only on your device** and does not provide cloud backup or sync.
 - Accordingly, data may be unrecoverable if you lose or reset your device or delete the App. You are responsible for preserving your data.
 - You must use the App in compliance with applicable laws and these Terms.
 

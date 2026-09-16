@@ -5,7 +5,7 @@ export const dict = {
     meta: {
       title: `${PRODUCT_NAME} | 할 일을 사냥하는 픽셀 RPG 투두`,
       description:
-        "미룬 할 일이 몬스터가 되어 자라납니다. 마감 전에 완료하면 용사가 단칼에 처치! 계정도 광고도 없고 데이터가 기기 안에 머무는 픽셀 RPG 투두 앱.",
+        "미룬 할 일이 몬스터가 되어 자라납니다. 마감 전에 완료하면 용사가 단칼에 처치! 계정도 광고도 없고 퀘스트 원본을 기기 안에 보관하는 픽셀 RPG 투두 앱.",
     },
     nav: { langLabel: "언어 선택", brand: PRODUCT_NAME },
     hero: {
@@ -110,13 +110,13 @@ export const dict = {
         },
         {
           title: "계정도 광고도 없음",
-          body: "단일 기기에서 사용하며, 모든 앱 데이터는 기기 안에만 저장됩니다.",
+          body: "단일 기기에서 사용하며, 퀘스트와 사용 이벤트 원본은 기기 안에 저장됩니다.",
         },
       ],
     },
     privacy: {
-      title: "앱 데이터는 기기 안에 남습니다",
-      body: "계정 없음, 개발자 서버 없음, 광고 없음, 추적 없음. 선택적 후원은 가격 조회와 결제 처리에만 Apple App Store와 통신합니다.",
+      title: "퀘스트 원본은 기기 안에 남습니다",
+      body: "계정, 개발자 서버, 광고가 없습니다. 후원은 Apple App Store와 통신합니다. 자동 분석 없음: 직접 식별자를 제외한 집계 보고서는 내용을 확인하고 직접 공유할 때만 기기 밖으로 나갑니다.",
       link: "개인정보처리방침 읽기",
     },
     faq: {
@@ -128,7 +128,7 @@ export const dict = {
         },
         {
           q: "데이터는 어디에 저장되나요?",
-          a: "모든 데이터는 기기 안에만 저장됩니다. 서버로 전송되지 않으며, Apple 기준 “수집된 데이터 없음”에 해당합니다.",
+          a: "퀘스트와 사용 이벤트 원본은 기기 안에 저장됩니다. 자동 분석 없음: 직접 식별자를 제외한 집계 보고서는 내용을 확인하고 직접 공유할 때만 기기 밖으로 나갑니다.",
         },
         {
           q: "어떤 기기에서 쓸 수 있나요?",
@@ -268,13 +268,13 @@ export const dict = {
         },
         {
           title: "No accounts, no ads",
-          body: "Built for one device. All your app data stays on your device.",
+          body: "Built for one device. Original quest and usage event data stays on your device.",
         },
       ],
     },
     privacy: {
-      title: "Your app data stays on your device",
-      body: "No accounts, developer servers, ads, or tracking. The optional Tip Jar contacts Apple's App Store only to load prices and process purchases.",
+      title: "Your original quest data stays on your device",
+      body: "There are no accounts, developer servers, or ads. The Tip Jar contacts Apple's App Store. No automatic analytics: an aggregate report without direct identifiers leaves your device only when you review and share it.",
       link: "Read the privacy policy",
     },
     faq: {
@@ -286,7 +286,7 @@ export const dict = {
         },
         {
           q: "Where is my data stored?",
-          a: "Everything stays on your device. Nothing is sent to a server, and the app qualifies as “Data Not Collected” under Apple's App Privacy standards.",
+          a: "Original quest and usage event data stays on your device. No automatic analytics: an aggregate report without direct identifiers leaves your device only when you review and share it.",
         },
         {
           q: "Which devices are supported?",
