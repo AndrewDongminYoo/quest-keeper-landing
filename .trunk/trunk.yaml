@@ -18,9 +18,10 @@ runtimes:
     - python@3.14.4
 # This is the section where you manage your linters. (https://docs.trunk.io/check/configuration)
 lint:
+  disabled:
+    - grype
   enabled:
     - eslint@10.8.1
-    - grype@0.117.0
     - checkov@3.3.11
     - git-diff-check
     - markdownlint@0.49.1
@@ -33,12 +34,6 @@ lint:
   ignore:
     - linters: [markdownlint]
       paths: [content/legal/*.md]
-    # osv-scanner: versions that parse pnpm lockfileVersion 9.0 (>=1.7.3) ship only an
-    # unversioned darwin_arm64 asset, which trunk CLI 1.25.0 fails to download (404 on the
-    # old versioned URL). Until trunk fixes its download-constraint evaluation, run
-    # `osv-scanner scan --lockfile pnpm-lock.yaml` directly instead.
-    - linters: [osv-scanner]
-      paths: [pnpm-lock.yaml]
 actions:
   enabled:
     - trunk-announce
