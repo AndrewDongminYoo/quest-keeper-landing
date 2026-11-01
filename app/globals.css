@@ -1,19 +1,23 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #12101f;
-  --color-surface: #1b1830;
-  --color-panel: #201c38;
-  --color-line: #322c52;
-  --color-ink: #eceaf6;
-  --color-muted: #a9a3c8;
-  --color-accent: #e8b44a;
+  --color-bg: #17131f;
+  --color-surface: #211d2a;
+  --color-panel: #292532;
+  --color-line: #414758;
+  --color-ink: #f2edf7;
+  --color-muted: #b6b1c2;
+  --color-accent: #6fa0ff;
+  --color-hero: #6fa0ff;
+  --color-victory: #ffd95a;
+  --color-danger: #ff705a;
+  --color-guide: #7fe0d0;
 
   --font-pixel: var(--font-galmuri), monospace;
   --font-pixel-lg: var(--font-galmuri14), var(--font-galmuri), monospace;
   --font-sans:
     -apple-system, "Pretendard Variable", Pretendard, "Apple SD Gothic Neo",
-    "Noto Sans KR", system-ui, sans-serif;
+    "Noto Sans KR", var(--font-galmuri), system-ui, sans-serif;
 }
 
 body {
@@ -32,6 +36,41 @@ body {
   background-color: var(--color-panel);
   box-shadow: 6px 6px 0 0 rgb(0 0 0 / 0.45);
 }
+
+.dungeon-preview {
+  min-width: 0;
+  border: 3px solid var(--color-line);
+  background: var(--color-surface);
+  box-shadow: 8px 8px 0 #0d0b12;
+}
+
+.dungeon-hud {
+  padding: 20px;
+  border-block: 2px solid var(--color-line);
+  background: var(--color-bg);
+}
+
+.dungeon-floor {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 106px;
+  padding: 12px 16px 12px 0;
+  border-bottom: 3px solid var(--color-line);
+  background: var(--color-panel);
+}
+
+.dungeon-floor__rail {
+  width: 10px;
+  height: 78px;
+  flex-shrink: 0;
+  border-right: 3px solid var(--color-line);
+  background: var(--color-bg);
+}
+
+.dungeon-floor--won { background: #302d27; }
+.dungeon-action { min-height: 32px; font-size: 12px; text-decoration: underline; text-underline-offset: 4px; cursor: pointer; }
+button:focus-visible, a:focus-visible { outline: 2px solid var(--color-hero); outline-offset: 4px; }
 
 .pixel-btn {
   border: 2px solid var(--color-accent);
