@@ -5,12 +5,12 @@ export const dict = {
     meta: {
       title: `${PRODUCT_NAME} | 할 일을 사냥하는 픽셀 RPG 투두`,
       description:
-        "미룬 할 일이 몬스터가 되어 자라납니다. 마감 전에 완료하면 용사가 단칼에 처치! 계정도 광고도 없고 퀘스트 원본을 기기 안에 보관하는 픽셀 RPG 투두 앱.",
+        "작은 승리로 채우는 오늘의 던전. 할 일을 완료하면 한 방의 승리, 놓친 일은 내일 다시. 계정도 광고도 없이 기기 안에서 시작하는 iOS 픽셀 RPG 투두 앱.",
     },
     nav: { langLabel: "언어 선택", brand: PRODUCT_NAME },
     hero: {
-      title: ["할 일을 사냥하는", "픽셀 RPG 투두"],
-      sub: "미룬 할 일은 몬스터가 되어 자라나고, 마감 전에 끝내면 용사가 단칼에 처치합니다.",
+      title: ["작은 승리로 채우는", "오늘의 던전"],
+      sub: "할 일 하나가 던전 한 층으로. 끝내면 짜릿한 한 방, 놓치면 내일 다시. 완벽하지 않은 하루도 모험이 됩니다.",
       primary: "App Store에서 다운로드",
       secondary: "동작 방식 보기",
       sceneLabel: "픽셀 용사가 슬라임 몬스터와 마주보고 있는 장면",
@@ -163,12 +163,12 @@ export const dict = {
     meta: {
       title: `${PRODUCT_NAME} | The pixel RPG to-do list`,
       description:
-        "Procrastinated tasks grow into monsters. Finish before the deadline and your hero slays them in one strike. A local-first pixel RPG to-do app with no accounts and no ads.",
+        "A daily pixel dungeon for small wins. Complete a task in one strike, try missed quests again tomorrow. A local-first iOS to-do app with no accounts and no ads.",
     },
     nav: { langLabel: "Select language", brand: PRODUCT_NAME },
     hero: {
-      title: ["Hunt your to-dos in", "a pixel RPG"],
-      sub: "Procrastinated tasks grow into monsters. Finish before the deadline and your hero slays them in one strike.",
+      title: ["Small wins.", "Your daily dungeon."],
+      sub: "One task, one dungeon floor. Finish with a single strike. Miss a day? Try again tomorrow. Imperfect days still count.",
       primary: "Download on the App Store",
       secondary: "See how it works",
       sceneLabel: "A pixel hero facing a slime monster",

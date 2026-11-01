@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BattleShowcase } from "@/components/BattleShowcase";
+import { DungeonPreview } from "@/components/DungeonPreview";
 import { Sprite, type SpriteName } from "@/components/Sprite";
 import { dict } from "@/lib/dictionaries";
 import {
@@ -66,7 +67,7 @@ export default async function LandingPage({
       />
 
       {/* 히어로: 비대칭 스플릿 */}
-      <section className="mx-auto grid w-full max-w-5xl items-center gap-10 px-4 pt-14 pb-20 sm:px-6 lg:grid-cols-[3fr_2fr] lg:pt-20">
+      <section className="mx-auto grid w-full max-w-5xl items-center gap-12 px-4 pt-10 pb-20 sm:px-6 lg:grid-cols-[1fr_1fr] lg:pt-14">
         <div>
           <h1 className="font-pixel-lg text-3xl leading-snug font-bold sm:text-4xl lg:text-5xl lg:leading-snug">
             {t.hero.title[0]}
@@ -93,23 +94,7 @@ export default async function LandingPage({
             </a>
           </div>
         </div>
-        <div
-          role="img"
-          aria-label={t.hero.sceneLabel}
-          className="pixel-panel relative mx-auto flex h-64 w-full max-w-sm items-end justify-center gap-6 overflow-hidden px-6 pb-8"
-        >
-          <Sprite
-            name="coin"
-            size={40}
-            className="anim-bob-delay absolute top-6 right-8"
-          />
-          <Sprite name="hero" size={120} animated />
-          <Sprite name="slime" size={88} animated />
-          <div
-            className="absolute inset-x-0 bottom-0 h-4 bg-line"
-            aria-hidden="true"
-          />
-        </div>
+        <DungeonPreview locale={locale} />
       </section>
 
       {/* 성장 패널: 풀와이드 단일 패널 */}
