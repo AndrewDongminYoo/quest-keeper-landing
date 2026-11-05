@@ -1,6 +1,9 @@
 import type { Metadata, Viewport } from "next";
 
-export const viewport: Viewport = { themeColor: "#17131f", colorScheme: "dark" };
+export const viewport: Viewport = {
+  themeColor: "#17131f",
+  colorScheme: "dark",
+};
 import localFont from "next/font/local";
 import Link from "next/link";
 import { notFound } from "next/navigation";

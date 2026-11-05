@@ -68,9 +68,21 @@ body {
   background: var(--color-bg);
 }
 
-.dungeon-floor--won { background: #302d27; }
-.dungeon-action { min-height: 32px; font-size: 12px; text-decoration: underline; text-underline-offset: 4px; cursor: pointer; }
-button:focus-visible, a:focus-visible { outline: 2px solid var(--color-hero); outline-offset: 4px; }
+.dungeon-floor--won {
+  background: #302d27;
+}
+.dungeon-action {
+  min-height: 32px;
+  font-size: 12px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  cursor: pointer;
+}
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--color-hero);
+  outline-offset: 4px;
+}
 
 .pixel-btn {
   border: 2px solid var(--color-accent);
