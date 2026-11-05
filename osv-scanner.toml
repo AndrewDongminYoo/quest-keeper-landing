@@ -1,3 +1,7 @@
 [[IgnoredVulns]]
+id = "GHSA-g3hv-75wg-m249"
+reason = "minimatch@10.2.6 via the eslint@10.13.0 devDependency, @eslint/config-array@0.23.5 and @typescript-eslint/typescript-estree@8.72.1 has no compatible patch as of 2026-11-05: the advisory covers >= 7.0.0, < 11.0.1, the fix is minimatch 11.0.1, and the newest releases of those parents (eslint 10.14.0, @eslint/config-array 0.23.5, @typescript-eslint/typescript-estree 8.72.1) still require minimatch ^10. Medium severity, DoS through globparts amplification. No first-party source imports minimatch; every path in the lockfile ends at a devDependency (lint tooling), so it is not part of the shipped site code. Approved on 2026-11-05. Re-evaluate when eslint, @eslint/config-array or @typescript-eslint/typescript-estree accepts minimatch 11."
+
+[[IgnoredVulns]]
 id = "GHSA-vfj7-8cjw-p6xm"
 reason = "braces@3.0.3 has no compatible reachable patch as of 2026-10-12 (advisory first_patched_version is empty; npm latest is 3.0.3). Reachability evidence: `pnpm why braces` shows one path, eslint-config-next@16.4.0 > @next/eslint-plugin-next@16.4.0 > fast-glob@3.3.1 > micromatch@4.0.8 > braces@3.0.3, dev-only. The plugin calls fast-glob only in dist/utils/get-root-dirs.js when settings.next.rootDir is set, and eslint.config.mjs does not set it. Approved by Dongmin Yu on 2026-10-12. Re-evaluation owner: Dongmin Yu removes this entry when braces publishes a patched 3.x release or when the path goes away."
