@@ -17,7 +17,7 @@
 - Do not add dependencies, user-data persistence, app-data synchronization, game economy features, or a generic animation system.
 - Keep both locales functionally equivalent and retain the current App Store, privacy, offline, notification, and widget claims.
 - Honor `prefers-reduced-motion` by keeping semantic battle phases while disabling positional and transform motion.
-- Leave all changes uncommitted unless the operator explicitly requests a commit.
+- Leave all changes uncommitted unless the user explicitly requests a commit.
 
 ---
 
