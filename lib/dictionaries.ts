@@ -147,6 +147,8 @@ export const dict = {
     footer: {
       developer: "만든 사람",
       developerName: "Dongmin Yu (Andrew)",
+      portfolio: "유동민 포트폴리오",
+      portfolioUrl: "https://donminzzi.kr",
       contact: "문의",
       links: "문서",
       privacy: "개인정보처리방침",
@@ -305,6 +307,8 @@ export const dict = {
     footer: {
       developer: "Developer",
       developerName: "Dongmin Yu (Andrew)",
+      portfolio: "Dongmin Yu's portfolio",
+      portfolioUrl: "https://donminzzi.kr/en",
       contact: "Contact",
       links: "Documents",
       privacy: "Privacy Policy",

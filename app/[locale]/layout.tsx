@@ -115,6 +115,15 @@ export default async function LocaleLayout({
               <p className="text-sm">{t.footer.developerName}</p>
               <p className="mt-1 text-sm text-muted">
                 <a
+                  href={t.footer.portfolioUrl}
+                  rel="noopener noreferrer"
+                  className="underline underline-offset-4 hover:text-ink"
+                >
+                  {t.footer.portfolio}
+                </a>
+              </p>
+              <p className="mt-1 text-sm text-muted">
+                <a
                   href="https://github.com/AndrewDongminYoo"
                   rel="noopener noreferrer"
                   className="underline underline-offset-4 hover:text-ink"
