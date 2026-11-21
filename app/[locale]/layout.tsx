@@ -58,6 +58,11 @@ export async function generateMetadata({
       images: [{ url: "/og.png", width: 1200, height: 630 }],
     },
     twitter: { card: "summary_large_image" },
+    verification: {
+      other: {
+        "naver-site-verification": "8a76251372d426c91efb3ce4db70cc7564425e69",
+      },
+    },
   };
 }
 
